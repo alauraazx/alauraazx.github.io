@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ceddfb;
+    color: #333;
+}
+.cabecalho{
+    text-align: center;
+    height: max-content;
+}
+#img_cad{
+	vertical-align: middle;
+    float : left;
+	padding-left : 10px;
+}
+h1 {
+    text-align: center;
+    color: #3d11ef;
+    font-size: 38px;
+    margin-bottom: 25px;
+    animation: changeColor 10s infinite;
+}
+@keyframes changeColor {
+  0%   {color: blue;}
+  25%  {color: white;}
+  50%  {color: black;}
+  100% {color: blue;}
+}
+h2 {
+    color: #05bef6;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 17px;
+    font-weight: normal;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+ul {
+    background-color: white;
+    padding: 25px 45px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+#lista{ /* Deixar uma foto no fundo da lista, dei um id e arrumei no css*/
+background-image: url('../images/livrosfundo.jpg');
+  background-size: cover;
+}
+p {
+    font-size: 18px;
+    max-width: 900px;
+    text-align: justify;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #03dff7;
+    color: white;
+    padding: 12px 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* dx o link maior quando passa o mouse em cima */
+a:hover {
+    background-color: #2e315c;
+    transform: scale(1.05);
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    background-color: white;
+    margin: 30px auto 0 auto; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    align-content: center;
+}
+
+/* Título da tabela */
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c3d2e;
+    margin-bottom: 15px;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #6a85fe;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Células */
+td {
+    padding: 15px;
+    border: 1px solid #000001;
+    vertical-align: top;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+    background-color: #28afed;
+}
+
+/* Efeito ao passar o mouse */
+tr:hover {
+    background-color: #f8f7f6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td,
+    th {
+        padding: 8px;
+    }
+}
+/* Container principal do card */
+.card_livro {
+  width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Estilização da capa do livro */
+.imagem {
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+.livros{
+  display: flex;          /* Ativa o alinhamento em linha */
+  flex-wrap: wrap;        /* Joga o card para a linha de baixo se faltar espaço na tela */
+  gap: 20px;              /* Cria um espaçamento uniforme de 20px entre os cards */
+  justify-content: center;/* Centraliza os cards na tela (opcional) */
+  padding: 20px;
+}
+
+/* Sinopse / Descrição */
+.descricao_livro {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0 0 16px 0;
+}
+
+/* Bloco de citação / Frase de destaque */
+.frases {
+  display: block;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #666666;
+  background-color: #f9f9f9;
+  padding: 10px 12px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.rodape{
+	left: 0;
+	bottom: 0;
+	line-height: 1.25em;
+	margin-top: 3em;
+	text-align: center;
+	background-color: rgb(30, 176, 239);
+}
+ol{
+    padding-left: 20px;
+    color: #3d11ef;
+}
+h4{
+    color: #333;
+    font-style: italic;
+}
